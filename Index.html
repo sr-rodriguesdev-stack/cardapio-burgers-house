@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cardápio - Hamburgueria</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("IMGs/Logo.PNG") no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #6e3e16;
+      color: rgb(255, 255, 255);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: rgba(177, 176, 176, 0.2);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    h2 {
+      color: #ffffff;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px 30px;
+      color: #ffffff;
+    }
+
+    .menu .col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      align-items: flex-start;
+    }
+
+    .item .info {
+      max-width: 70%;
+    }
+
+    .item .name {
+      font-weight: bold;
+      display: block;
+    }
+
+    .item .desc {
+      font-size: 0.85em;
+      color: #ddd;
+      margin-top: 5px;
+    }
+
+    .item .price {
+      font-weight: bold;
+      margin-left: 10px;
+      white-space: nowrap;
+    }
+
+    .whatsapp-btn {
+      display: block;
+      width: 50%;
+      margin: 30px auto 0;
+      padding: 15px;
+      background-color: #25d366;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebd5a;
+    }
+
+    @media (max-width: 600px) {
+      .menu {
+        grid-template-columns: 1fr;
+      }
+      .whatsapp-btn {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Burgers House</h1>
+    <p>Confira nosso cardápio 🍔</p>
+  </header>
+
+  <div class="container">
+    <h2>Cardápio</h2>
+
+    <div class="menu">
+      <div class="col">
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 Cheddar House</span>
+            <p class="desc">Pão - Hambúrguer - Cheddar cremoso - Presunto - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 13,00</span>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 Veggie House</span>
+            <p class="desc">Pão - Hambúrguer - Alface - Tomate - Cebola roxa - Cheddar cremoso - Presunto - Ovo - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 15,00</span>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 Estouro da Casa</span>
+            <p class="desc">Pão - Hambúrguer - Bacon - Cheddar cremoso - Presunto - 2x Ovos - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 17,00</span>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 Segundo Andar</span>
+            <p class="desc">Pão - 2x Hambúrguer - Alface - Tomate - 2x Cheddar cremoso - Presunto - 2x Ovos - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 22,00</span>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 House Mix</span>
+            <p class="desc">Pão - Hambúrguer - Alface - Tomate - Cebola roxa - Bacon - Calabresa - Cheddar cremoso - Presunto - Ovo - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 24,00</span>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 Big House</span>
+            <p class="desc">Pão - 2x Hambúrguer - Alface - Tomate - Bacon - Calabresa - Cheddar cremoso - 2x Presunto - 2x Ovos - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 27,00</span>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 Sótão Secreto</span>
+            <p class="desc">Pão brioche - Carne artesanal 140g - Cebola roxa - Cheddar fatiado - Bacon - Ovo - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 27,90</span>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 Royal Salad</span>
+            <p class="desc">Pão brioche - Carne artesanal 140g - Alface - Tomate - Cebola roxa - Milho - 2x Cheddar fatiado - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 31,90</span>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 Crispy House</span>
+            <p class="desc">Pão brioche - Carne artesanal 140g - Cheddar fatiado - Cream cheese - Bacon - 3 anéis de cebola - Ovo - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 26,90</span>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 Sala Real</span>
+            <p class="desc">Pão brioche - Carne artesanal - Alface - Tomate - Cebola roxa - Bacon - Cheddar caseiro - Ovo - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 40,90</span>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 Suíte Master</span>
+            <p class="desc">Pão brioche - 2x Carne artesanal 140g - Alface - Tomate - Cebola roxa - Milho - Bacon - 2x Cheddar fatiado - Cream cheese - 2x Ovos - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 53,20</span>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <span class="name">🍔 Burger House</span>
+            <p class="desc">Pão brioche - 2x Carne artesanal 140g - Alface - Tomate - Cebola roxa - Milho - 2x Cheddar fatiado - Catupiry original - Bacon - Calabresa - 2x Ovos - Batata palha - Molho</p>
+          </div>
+          <span class="price">R$ 58,20</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>🍟 Porções</h2>
+    <div class="menu">
+      <div class="item">
+        <div class="info">
+          <span class="name">🍟 Fritas Bobs 200g</span>
+          <p class="desc">Porção de batata crocante.</p>
+        </div>
+        <span class="price">R$ 10,00</span>
+      </div>
+
+      <div class="item">
+        <div class="info">
+          <span class="name">🍟 Fritas Bobs 350g</span>
+          <p class="desc">Porção de batata crocante.</p>
+        </div>
+        <span class="price">R$ 15,00</span>
+      </div>
+
+      <div class="item">
+        <div class="info">
+          <span class="name">🍗 Big Nuggets 6 unid.</span>
+          <p class="desc">Porção de nuggets que cabem no seu bolso, mas preenchem a fome.</p>
+        </div>
+        <span class="price">R$ 14,00</span>
+      </div>
+
+      <div class="item">
+        <div class="info">
+          <span class="name">🍗 Big Nuggets 12 unid.</span>
+          <p class="desc">Porção maior para quem tem uma fome maior.</p>
+        </div>
+        <span class="price">R$ 22,00</span>
+      </div>
+
+      <div class="item">
+        <div class="info">
+          <span class="name">🌭 Calabresa acebolada 300g</span>
+          <p class="desc">Uma bela opção para quem quer algo diferente.</p>
+        </div>
+        <span class="price">R$ 18,00</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>🥤 Bebidas</h2>
+    <div class="menu">
+      <div class="item">
+        <div class="info">
+          <span class="name">🥤 Coca-Cola Lata</span>
+          <p class="desc">Só desce se tiver uma Coca-Cola 🥶😉</p>
+        </div>
+        <span class="price">R$ 6,00</span>
+      </div>
+
+      <div class="item">
+        <div class="info">
+          <span class="name">🥤 Guaraná Lata</span>
+          <p class="desc">Para os amantes dele, um refrescante guaraná 😌☺️</p>
+        </div>
+        <span class="price">R$ 6,00</span>
+      </div>
+
+      <div class="item">
+        <div class="info">
+          <span class="name">🥤 Guaravita Lata</span>
+          <p class="desc">Uma opção leve, mas que não perde em qualidade 💪😋</p>
+        </div>
+        <span class="price">R$ 3,00</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>➕ Adicionais</h2>
+    <div class="menu">
+      <div class="item">
+        <div class="info">
+          <span class="name">🧀 Cheddar cremoso</span>
+          <p class="desc">Uma derretida digna de cena de comercial.</p>
+        </div>
+        <span class="price">R$ 4,50</span>
+      </div>
+
+      <div class="item">
+        <div class="info">
+          <span class="name">🐽 Calabresa</span>
+          <p class="desc">Uma suculenta calabresa adicionada ao seu House é a melhor escolha.</p>
+        </div>
+        <span class="price">R$ 2,00</span>
+      </div>
+
+      <div class="item">
+        <div class="info">
+          <span class="name">🥓 Bacon</span>
+          <p class="desc">Se a calabresa já era boa, imagine este bacon! Vai explodir seu paladar.</p>
+        </div>
+        <span class="price">R$ 3,00</span>
+      </div>
+
+      <div class="item">
+        <div class="info">
+          <span class="name">🍔 Hambúrguer</span>
+          <p class="desc">Um é bom, mas dois... hmmmm! Com certeza você não vai se arrepender.</p>
+        </div>
+        <span class="price">R$ 3,00</span>
+      </div>
+
+      <div class="item">
+        <div class="info">
+          <span class="name">☘️ Molho verde</span>
+          <p class="desc">Não podemos esquecer de um toque verde no seu lanche, né?</p>
+        </div>
+        <span class="price">R$ 2,50</span>
+      </div>
+
+      <div class="item">
+        <div class="info">
+          <span class="name">🔥 Molho especial</span>
+          <p class="desc">Aqui está o indispensável molho da casa, feito com as mais diferenciadas especiarias, preparado para ser inesquecível.</p>
+        </div>
+        <span class="price">R$ 3,00</span>
+      </div>
+    </div>
+  </div>
+
+  <a class="whatsapp-btn" href="https://wa.me/24981542422" target="_blank">
+    📲 Fazer pedido pelo WhatsApp
+  </a>
+
+</body>
+</html>
